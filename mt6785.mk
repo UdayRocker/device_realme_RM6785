@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
+# RRO (Runtime Resource Overlay)
+PRODUCT_ENFORCE_RRO_TARGETS := \
+    framework-res
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
