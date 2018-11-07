@@ -172,8 +172,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay
 
 # RRO (Runtime Resource Overlay)
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Permissions
 PRODUCT_COPY_FILES += \
