@@ -48,6 +48,9 @@ TARGET_NO_BOOTLOADER := true
 # Build system
 BUILD_BROKEN_DUP_RULES := true
 
+# Display
+TARGET_SCREEN_DENSITY := 420
+
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 
