@@ -39,6 +39,9 @@ function blob_fixup {
         system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml)
             sed -i 's/my_product/system\/system_ext/' "$2"
             ;;
+        vendor/etc/init/hw/*.rc)
+            sed -i 's ${ro.vendor.rc} /vendor/etc/init/hw/ g' "$2"
+            ;;
     esac
 }
 
