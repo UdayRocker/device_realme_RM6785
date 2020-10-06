@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
 # KPOC
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0 \
+    libshim_showlogo \
     libsuspend
 
 # Lights

@@ -39,6 +39,9 @@ function blob_fixup {
         lib/libsink.so)
             "$PATCHELF" --add-needed "libshim_vtservice.so" "$2"
             ;;
+        lib/libshowlogo.so)
+            "$PATCHELF" --add-needed "libshim_showlogo.so" "$2"
+            ;;
         system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml)
             sed -i 's/my_product/system_ext/' "$2"
             ;;
