@@ -275,6 +275,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     ImsServiceBase
 
+PRODUCT_PACKAGES += \
+    libshim_vtservice
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
