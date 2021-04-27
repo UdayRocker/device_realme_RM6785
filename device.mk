@@ -138,7 +138,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.RM6785
+    android.hardware.light-service.RM6785
 
 # Media
 PRODUCT_COPY_FILES += \

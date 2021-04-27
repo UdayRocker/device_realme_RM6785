@@ -14,22 +14,19 @@
 // limitations under the License.
 
 cc_binary {
-    name: "android.hardware.light@2.0-service.RM6785",
-    defaults: ["hidl_defaults"],
-    init_rc: ["android.hardware.light@2.0-service.RM6785.rc"],
-    vintf_fragments: ["android.hardware.light@2.0-service.RM6785.xml"],
+    name: "android.hardware.light-service.RM6785",
+    init_rc: ["android.hardware.light-service.RM6785.rc"],
+    vintf_fragments: ["android.hardware.light-service.RM6785.xml"],
     relative_install_path: "hw",
     srcs: [
-        "service.cpp",
+        "main.cpp",
         "Light.cpp",
     ],
     shared_libs: [
         "libbase",
         "libhardware",
-        "libhidlbase",
-        "liblog",
-        "libutils",
-        "android.hardware.light@2.0",
+        "libbinder_ndk",
+        "android.hardware.light-V1-ndk_platform",
     ],
     vendor: true,
 }
