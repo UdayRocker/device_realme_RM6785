@@ -1,1 +1,2 @@
 genfscon proc  /touchpanel u:object_r:proc_tp:s0
+genfscon proc  /fastchg_fw_update u:object_r:proc_fastchg_fw:s0
