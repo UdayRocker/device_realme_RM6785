@@ -236,10 +236,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.mt6785.rc
 
-# Renderscript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
-
 # RcsService
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
