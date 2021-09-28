@@ -1,9 +1,6 @@
 on init
     mount none /vendor/lost+found /vendor/overlay bind
 
-    # Update fastcharge firmware
-    write /proc/fastchg_fw_update 1
-
 on fs
     mount_all /vendor/etc/fstab.mt6785 --early
     mount_all /vendor/etc/fstab.mt6785 --late
@@ -23,7 +20,12 @@ on post-fs-data
     # Services
     setprop init.svc.console stopped
 
-on boot
+on property:sys.boot_completed=1
+    # ZRAM
+    swapon_all /vendor/fstab.enableswap
+
+    # Update fastcharge firmware
+    write /proc/fastchg_fw_update 1
 
     # Disable edge limit control interface
     write /proc/touchpanel/oplus_tp_limit_enable 0
@@ -33,10 +35,6 @@ on boot
 
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
-
-on property:sys.boot_completed=1
-    # ZRAM
-    swapon_all /vendor/fstab.enableswap
 
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
