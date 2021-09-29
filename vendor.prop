@@ -169,3 +169,5 @@ persist.vendor.md_c2k_cap_dep_check=0
 ro.incremental.enable=yes
 debug.sf.latch_unsignaled=1
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.soc.manufacturer=MediaTek
+ro.soc.model=MT6785
