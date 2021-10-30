@@ -1,6 +1,3 @@
-on init
-    mount none /vendor/lost+found /vendor/overlay bind
-
 on fs
     mount_all /vendor/etc/fstab.mt6785 --early
     mount_all /vendor/etc/fstab.mt6785 --late
@@ -42,7 +39,3 @@ on property:vendor.ril.mtk=1
 
 on property:persist.vendor.radio.port_index=""
     setprop sys.usb.config adb
-
-service face_hal /system/bin/true
-    oneshot
-    disabled

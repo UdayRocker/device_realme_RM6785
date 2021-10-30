@@ -59,10 +59,6 @@ etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 
 # Vendor
-vendor/app/EmCamera/EmCamera.apk
-vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk
-vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk
-vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk
 vendor/app/mcRegistry/020b0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
@@ -100,21 +96,14 @@ vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.drbin
 vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin
 vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin
 vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
-vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk
-vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk
-vendor/app/TetheringResOverlay/TetheringResOverlay.apk
 vendor/bin/aee_aedv
 vendor/bin/aee_aedv64
 vendor/bin/aee_dumpstatev
 vendor/bin/aeev
-vendor/bin/applypatch
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
-vendor/bin/awk
 vendor/bin/bip
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
@@ -124,7 +113,6 @@ vendor/bin/dexecutor
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
-vendor/bin/dumpsys
 vendor/bin/em_hidl
 vendor/bin/epdg_wod
 vendor/bin/factory
@@ -134,7 +122,6 @@ vendor/bin/gsm0710muxd
 vendor/bin/hostapd_cli
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
-vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/bin/hw/android.hardware.configstore@1.1-service
 vendor/bin/hw/android.hardware.drm@1.3-service.clearkey
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
@@ -144,7 +131,6 @@ vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
 vendor/bin/hw/android.hardware.graphics.composer@2.1-service
 vendor/bin/hw/android.hardware.health@2.1-service
 vendor/bin/hw/android.hardware.keymaster@4.0-service.trustonic
-vendor/bin/hw/android.hardware.lights-service.mediatek
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
@@ -174,7 +160,6 @@ vendor/bin/hw/vendor.trustonic.soter@1.0-service
 vendor/bin/hw/vendor.trustonic.tee@1.1-service
 vendor/bin/hw/vtservice_hidl
 vendor/bin/hw/wpa_supplicant
-vendor/bin/install-recovery.sh
 vendor/bin/ipsec_mon
 vendor/bin/jpegtool
 vendor/bin/lbs_hidl_service
@@ -196,7 +181,6 @@ vendor/bin/libccu_salaa_qtech_main_s5kgm1sp.ddr
 vendor/bin/libccu_sala_wide_ov8856.ddr
 vendor/bin/libccu_sarter_qtech_main_s5kgm1sp.ddr
 vendor/bin/loghidlvendorservice
-vendor/bin/logwrapper
 vendor/bin/mcDriverDaemon
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
@@ -212,7 +196,6 @@ vendor/bin/ppl_agent
 vendor/bin/recordevent
 vendor/bin/replayevent
 vendor/bin/rttv
-vendor/bin/sh
 vendor/bin/starter
 vendor/bin/stp_dump3
 vendor/bin/stroke
@@ -220,8 +203,6 @@ vendor/bin/swap_enable.sh
 vendor/bin/thermal
 vendor/bin/thermalloadalgod
 vendor/bin/thermal_manager
-vendor/bin/toolbox
-vendor/bin/toybox_vendor
 vendor/bin/vndservice
 vendor/bin/vndservicemanager
 vendor/bin/volte_imcb
@@ -236,9 +217,6 @@ vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/bin/wpa_cli
 vendor/bin/xcap
-vendor/build.prop
-vendor/data/misc/ProjectConfig.mk
-vendor/default.prop
 vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/a2dp_in_audio_policy_configuration.xml
 vendor/etc/aee-config
@@ -350,7 +328,6 @@ vendor/etc/audio_param/VoWHwVad_AudioParam.xml
 vendor/etc/audio_param/VoWHwVad_ParamUnitDesc.xml
 vendor/etc/audio_policy.conf
 vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-vendor/etc/audio_policy_configuration.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/aurisys_config.xml
@@ -507,7 +484,6 @@ vendor/etc/camera/filters_lut/Syt2KeZZf
 vendor/etc/camera/filters_lut/tree-green.cube.rgb.bin
 vendor/etc/camera/filters_lut/yuanqi-2.2s.cube.rgb.bin
 vendor/etc/camera/gasryuv.model
-vendor/etc/camera/license.lic
 vendor/etc/camera/M_Attribute_AG_BMW_1.1.0.model
 vendor/etc/camera/M_Attribute_Gender_Age_1.0.model
 vendor/etc/camera/merged_model_post
@@ -524,11 +500,8 @@ vendor/etc/ecc_list_preference.xml
 vendor/etc/ecc_list.xml
 vendor/etc/factory.ini
 vendor/etc/file112.wav
-vendor/etc/fs_config_dirs
-vendor/etc/fs_config_files
 vendor/etc/fstab.emmc
 vendor/etc/fstab.enableswap
-vendor/etc/fstab.mt6785
 vendor/etc/fstb.cfg
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -546,12 +519,10 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml
-vendor/etc/group
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/aee_aedv.rc
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
-vendor/etc/init/android.hardware.cas@1.2-service.rc
 vendor/etc/init/android.hardware.configstore@1.1-service.rc
 vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
@@ -573,7 +544,6 @@ vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/camerahalserver.rc
 vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/fuelgauged_init.rc
@@ -622,7 +592,6 @@ vendor/etc/init/init.wod.rc
 vendor/etc/init/init.xcap.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/lbs_hidl_service.rc
-vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/mtk_agpsd_p.rc
@@ -634,7 +603,6 @@ vendor/etc/init/nvram_daemon.rc
 vendor/etc/init/ppl_agent.rc
 vendor/etc/init/tee.rc
 vendor/etc/init/trustonic.rc
-vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/vendor.mediatek.hardware.aee@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc
 vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
@@ -678,16 +646,13 @@ vendor/etc/media_codecs_mediatek_video.xml
 vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs.xml
 vendor/etc/media_profiles_V1_0.xml
-vendor/etc/mkshrc
 vendor/etc/MNL_Config.xml
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/ncf_pack.ncf
 vendor/etc/nhw
-vendor/etc/NOTICE.xml.gz
 vendor/etc/oplus_avb.pubkey
 vendor/etc/partition_permission.sh
-vendor/etc/passwd
 vendor/etc/permissions/android.hardware.audio.low_latency.xml
 vendor/etc/permissions/android.hardware.bluetooth_le.xml
 vendor/etc/permissions/android.hardware.bluetooth.xml
@@ -932,13 +897,11 @@ vendor/etc/.tp/thermal.off.conf
 vendor/etc/.tp/.thermal_policy_08
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/etc/vintf/compatibility_matrix.xml
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
 vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml
 vendor/etc/vintf/manifest/android.hardware.health@2.1.xml
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml
 vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
-vendor/etc/vintf/manifest/lights-mtk-default.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
 vendor/etc/vintf/manifest/manifest_soter.xml
@@ -948,7 +911,6 @@ vendor/etc/vintf/manifest/oplus_radio_device_manifest.xml
 vendor/etc/vintf/manifest/oplus_wifi_supplicant_device.xml
 vendor/etc/vintf/manifest/power-default.xml
 vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
-vendor/etc/vintf/manifest/vendor_override_manifest.xml
 vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/etc/vintf/manifest.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
@@ -1454,7 +1416,6 @@ vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/b
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/euclid_build.prop
 vendor/firmware/BT_FW.cfg
 vendor/firmware/catcher_filter_1_ulwctg_n.bin
 vendor/firmware/customfilter/catcher_filter_1_ulwctg_n__Default.bin
@@ -2131,8 +2092,6 @@ vendor/lib64/libladder.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libMcClient.so
 vendor/lib64/libMcTeeSoter.so
-vendor/lib64/libmegface_rt_bokeh.so
-vendor/lib64/libMegviiHumBokehPost-mtk.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libminiui.so
 vendor/lib64/libml_util.so
@@ -3276,20 +3235,4 @@ vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/vndk/libstagefright_omx.so
 vendor/lib/VP9SecureVdecCA.so
-vendor/odm/etc/build.prop
-vendor/odm/etc/group
-vendor/odm/etc/NOTICE.xml.gz
-vendor/odm/etc/passwd
-vendor/odm/etc/vintf/manifest_dsds.xml
-vendor/odm/etc/vintf/manifest_qsqs.xml
-vendor/odm/etc/vintf/manifest_ss.xml
-vendor/odm/etc/vintf/manifest_tsts.xml
-vendor/recovery-from-boot.p
-vendor/res/images/lcd_test_00.png
-vendor/res/images/lcd_test_01.png
-vendor/res/images/lcd_test_02.png
-vendor/res/sound/ringtone.wav
-vendor/res/sound/testpattern1.wav
-vendor/ro.prop
-vendor/rw.prop
 vendor/ueventd.rc

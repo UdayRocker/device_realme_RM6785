@@ -43,7 +43,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/audio_policy_configuration.xml
+    $(COMMON_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -54,14 +54,11 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.realme_mt6785
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/vendor_override_manifest.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/vintf/manifest/vendor_override_manifest.xml
 
 # ImsInit hack
 PRODUCT_PACKAGES += \
@@ -74,7 +71,7 @@ PRODUCT_PACKAGES += \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/touchpanel.kl
+    $(COMMON_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/touchpanel.kl
 
 # KPOC
 PRODUCT_PACKAGES += \
