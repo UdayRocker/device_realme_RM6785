@@ -2299,6 +2299,7 @@ vendor/lib64/libTEECommon.so
 vendor/lib64/libtflite_mtk.so
 vendor/lib64/libtflite_mtk_static_R.so
 vendor/lib64/libthha.so
+vendor/lib64/libtinyxml.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/libudf.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
@@ -3082,6 +3083,7 @@ vendor/lib/libtflite_mtk.so
 vendor/lib/libtflite_mtk_static_R.so
 vendor/lib/libthermalalgo.so
 vendor/lib/libthha.so
+vendor/lib/libtinyxml.so
 vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/libudf.so
 vendor/lib/liburee_meta_drmkeyinstall.so
