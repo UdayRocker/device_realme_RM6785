@@ -42,6 +42,9 @@ function blob_fixup {
         vendor/etc/init/hw/*.rc)
             sed -i 's ${ro.vendor.rc} /vendor/etc/init/hw/ g' "$2"
             ;;
+        vendor/lib*/libudf.so)
+            "$PATCHELF" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "$2"
+            ;;
     esac
 }
 
