@@ -38,7 +38,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     debug.sf.latch_unsignaled=1 \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
-
-# Zygote
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.device_config.runtime_native.usap_pool_enabled=true
