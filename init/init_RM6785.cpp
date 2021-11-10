@@ -113,30 +113,34 @@ void vendor_load_properties() {
                || Trim(operator_name) == "146" || Trim(operator_name) == "149") {
             device = "RMX2151L1";
             model = "RMX2151";
+            property_override("ro.device", "RMX2151");
         }
         else if (Trim(operator_name) == "142") {
             device = "RMX2153L1";
             model = "RMX2153";
+            property_override("ro.device", "RMX2151");
         }
         else if (Trim(operator_name) == "94" || Trim(operator_name) == "148") {
             device = "RMX2155L1";
             model = "RMX2155";
+            property_override("ro.device", "RMX2151");
         }
         // realme Narzo 30 4G
         else if (Trim(operator_name) == "90" || Trim(operator_name) == "92") {
             device = "RMX2156L1";
             model = "RMX2156";
+            property_override("ro.device", "RMX2151");
         }
         // realme Narzo 20 Pro
         else if (Trim(operator_name) == "143") {
             device = "RMX2161L1";
             model = "RMX2161";
-            property_override("ro.power_profile", "RMX2161");
+            property_override("ro.device", "RMX2161");
         }
         else if (Trim(operator_name) == "147" || Trim(operator_name) == "145") {
             device = "RMX2163L1";
             model = "RMX2163";
-            property_override("ro.power_profile", "RMX2161");
+            property_override("ro.device", "RMX2161");
         }
     }
     else {
