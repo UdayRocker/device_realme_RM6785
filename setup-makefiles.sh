@@ -40,6 +40,10 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 # Copyright headers and common guards
 write_headers
 
+# [HAX] Remove soong_namespace declaration
+sed -i '/soong_namespace/,+2d' "$ANDROIDBP"
+sed -i '/PRODUCT_SOONG_NAMESPACES/,+2d' "$PRODUCTMK"
+
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
 

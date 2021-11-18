@@ -251,9 +251,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0.vendor \
     libsensorndkbridge
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
-
 # Soundtrigger
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
