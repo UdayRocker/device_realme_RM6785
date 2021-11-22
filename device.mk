@@ -108,10 +108,6 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
-# ImsInit hack
-PRODUCT_PACKAGES += \
-    ImsInit
-
 # Init
 PRODUCT_PACKAGES += \
     init.target.rc \
