@@ -35,3 +35,6 @@ system_ext                                       /system_ext           ext4    r
 # External-Devices (SDCARD | OTG)
 /devices/platform/externdevice*                  auto                  auto    defaults                                            voldmanaged=sdcard1:auto
 /devices/platform/usb3_xhci*                     auto                  vfat    defaults                                            voldmanaged=usbotg:auto
+
+# Swap
+/dev/block/zram0                                 none                  swap    defaults                                            zramsize=55%

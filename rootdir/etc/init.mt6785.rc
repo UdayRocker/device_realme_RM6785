@@ -19,7 +19,7 @@ on post-fs-data
 
 on property:sys.boot_completed=1
     # ZRAM
-    swapon_all /vendor/fstab.enableswap
+    swapon_all /vendor/etc/fstab.mt6785
 
     # Update fastcharge firmware
     write /proc/fastchg_fw_update 1

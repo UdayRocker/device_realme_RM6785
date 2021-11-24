@@ -671,8 +671,6 @@ vendor/etc/ecc_list_preference.xml
 vendor/etc/ecc_list.xml
 vendor/etc/factory.ini
 vendor/etc/file112.wav
-vendor/etc/fstab.emmc
-vendor/etc/fstab.enableswap
 vendor/etc/fstb.cfg
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -1067,7 +1065,6 @@ vendor/firmware/wifi_19661.cfg
 vendor/firmware/wifi_20682.cfg
 vendor/firmware/WIFI_RAM_CODE_soc1_0_2a_1.bin
 vendor/firmware/WMT_SOC.cfg
-vendor/fstab.enableswap
 vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer.so
