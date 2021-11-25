@@ -16,4 +16,5 @@ void _ZNK7android14SurfaceControl10getSurfaceEv(void) {
   _ZN7android14SurfaceControl10getSurfaceEv();
  }
 
+void _ZN7android21SurfaceComposerClient22getActiveDisplayConfigERKNS_2spINS_7IBinderEEEPNS_13DisplayConfigE() { }
 }
