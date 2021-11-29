@@ -13,13 +13,13 @@
 // limitations under the License.
 
 cc_library_static {
-    name: "libinit_realme_mt6785",
+    name: "libinit_RM6785",
     recovery_available: true,
     whole_static_libs: ["libbase"],
     header_libs: [
         "libbase_headers",
     ],
-    srcs: ["init_realme_mt6785.cpp"],
+    srcs: ["init_RM6785.cpp"],
     include_dirs: [
         "system/core/init"
     ]

@@ -1,8 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.networkstack.tethering.realme_mt6785"
-    android:versionCode="1"
-    android:versionName="1.0">
-    <application android:hasCode="false" />
+    package="com.android.networkstack.tethering.RM6785">
+
     <overlay
       android:targetPackage="com.android.networkstack.tethering"
       android:targetName="TetheringConfig"

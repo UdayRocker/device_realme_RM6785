@@ -18,10 +18,8 @@
 
 set -e
 
-export DEVICE_COMMON=mt6785-common
+export DEVICE=RM6785
 export VENDOR=realme
-
-INITIAL_COPYRIGHT_YEAR=2020
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
@@ -36,26 +34,14 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Initialize the helper for common device
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
-
-# Copyright headers and common guards
-write_headers "RMX2001 RMX2151"
-
-# The common blobs
-write_makefiles "$MY_DIR"/proprietary-files.txt true
-
-# We are done with common
-write_footers
-
 # Initialize the helper for device
-setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false
+setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 
 # Copyright headers and common guards
 write_headers
 
 # The standard blobs
-write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt true
+write_makefiles "${MY_DIR}/proprietary-files.txt" true
 
 # Finish
 write_footers

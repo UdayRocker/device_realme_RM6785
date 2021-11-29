@@ -1,4 +1,4 @@
-service vendor.light-hal-2-0.realme_mt6785 /vendor/bin/hw/android.hardware.light@2.0-service.realme_mt6785
+service vendor.light-hal-2-0.RM6785 /vendor/bin/hw/android.hardware.light@2.0-service.RM6785
     interface android.hardware.light@2.0::ILight default
     class hal
     user system

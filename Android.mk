@@ -16,7 +16,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter RMX2001 RMX2151,$(TARGET_DEVICE)),)
+ifeq ($(TARGET_DEVICE),RM6785)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
