@@ -349,4 +349,8 @@
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
+
+    <!-- Exempt ImsService from privacy (location) indicators --> 
+    <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
+
 </resources>
